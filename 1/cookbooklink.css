@@ -1,0 +1,920 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 20px;
+    border: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 30%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to left, #865d36, #93785b, #865d36);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1800px;
+}
+
+.nav-logo{
+    max-width: 100px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-right: 400px;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #3e362e;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #3e362e;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.bttn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #3e362e;
+    background-image: linear-gradient(to left, #93785B, #A69080, #93785B);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.bttn:hover{
+    background-color: #865D36;
+    transform: scale(1.3);  
+}
+
+
+.container {
+    max-width: 1800px;
+    margin: auto;
+    padding: 5rem 2rem;
+    position: relative;
+    border: 10px #865D36;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 100px #3e362e;
+    z-index: -100;
+    
+}
+
+.image img {
+    width: 100%; 
+    display: flex;
+}
+
+.image{
+    overflow: hidden;
+}
+
+.image img{
+    border-radius: 50%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.image img:hover{
+    transform: scale(0.9);
+}
+
+.logo1{
+    overflow: hidden;
+}
+
+.logo1 img{
+    border-radius: 50%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.logo1 img:hover{
+    transform: scale(1.1);
+}
+
+
+.menus{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.menus .card1{
+    background-color: #93785B;
+    padding: 1rem; 
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.4s ease-in-out;
+    background-image: url(spaghetti.jpg.jpg);
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.menus .card2{
+    background-color: #93785B;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background-image: url(carbonaraz.png);
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.menus .card3{
+    background-color: #93785B;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background-image: url(adobo.jpg.jpg);
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.menus .card4{
+    background-color: #93785B;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background-image: url(humba2.jpg);
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.menus .card5{
+    background-color: #93785B;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background-image: url(giniling.jpg);
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.menus .card6{
+    background-color: #93785B;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background-image: url(sisig5.jpg);
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.menus .card7{
+    background-color: #93785B;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background-image: url(steamedrice.png);
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.menus .card8{
+    background-color: #93785B;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background-image: url(shawarma2.jpg);
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.menus .card9{
+    background-color: #93785B;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background-image: url(crispypata1.jpg);
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: cover;
+    opacity: 0.8;
+}   
+
+.menus .cardZ{
+    background-color: #93785B;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background-image: url(porkmenudo1.jpg);
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.menus .card1:hover{
+    background-color: #93785B;
+    border-color: #3e362e;
+    transform: scale(1.1);
+    filter: brightness(0.85);
+}
+
+.menus .card2:hover{
+    background-color: #93785B;
+    border-color: #3e362e;
+    transform: scale(1.1);
+    filter: brightness(0.85);
+}
+
+.menus .card3:hover{
+    background-color: #93785B;
+    border-color: #3e362e;
+    transform: scale(1.1);
+    filter: brightness(0.85);
+}
+
+.menus .card4:hover{
+    background-color: #93785B;
+    border-color: #3e362e;
+    transform: scale(1.1);
+    filter: brightness(0.85);
+}
+
+.menus .card5:hover{
+    background-color: #93785B;
+    border-color: #3e362e;
+    transform: scale(1.1);
+    filter: brightness(0.85);
+}
+
+.menus .card6:hover{
+    background-color: #93785B;
+    border-color: #3e362e;
+    transform: scale(1.1);
+    filter: brightness(0.85);
+}
+
+.menus .card7:hover{
+    background-color: #93785B;
+    border-color: #3e362e;
+    transform: scale(1.1);
+    filter: brightness(0.85);
+}
+
+.menus .card8:hover{
+    background-color: #93785B;
+    border-color: #3e362e;
+    transform: scale(1.1);
+    filter: brightness(0.85);
+}
+
+.menus .card9:hover{
+    background-color: #93785B;
+    border-color:#3e362e;
+    transform: scale(1.1);
+    filter: brightness(0.85);
+}
+
+.menus .cardZ:hover{
+    background-color: #93785B;
+    border-color: #3e362e;
+    transform: scale(1.1);
+    filter: brightness(0.85);
+}
+
+.menus .card1 span{
+    display: inline-block;
+    background-color: #93785B;
+    padding: 2px 4px;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #3e362e;
+    border-radius: 100%;
+    font-weight: bold;
+}
+
+.menus .card1 h4{
+    margin-bottom: 0.5rem;
+    margin-top: -50px;
+    margin-left: 3rem;
+    color: #3e362e;
+    text-decoration: underline #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.menus .card1 p{
+    color: #3e362e;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #93785B;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+
+.menus .card1 p:hover{
+    opacity: 1;
+}
+
+.menus .card1 a{
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    transition: all 0.3 ease;
+    font-weight: bold;
+}
+
+.menus .card1 a:hover{
+    color: #865D36;
+}
+
+.menus .card2 span{
+    display: inline-block;
+    background-color: #93785B;
+    padding: 2px 4px;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #3e362e;
+    border-radius: 100%;
+    font-weight: bold;
+}
+
+.menus .card2 h4{
+    margin-bottom: 0.5rem;
+    margin-top: -50px;
+    margin-left: 3rem;
+    text-decoration: underline #3e362e;
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.menus .card2 p{
+    color:#3e362e;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #93785B;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+
+.menus .card2 p:hover{
+    opacity: 1;
+}
+
+.menus .card2 a{
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    transition: all 0.3 ease;
+    font-weight: bold;
+}
+
+.menus .card2 a:hover{
+    color: #865D36;
+}
+
+.menus .card3 span{
+    display: inline-block;
+    background-color: #93785B;
+    padding: 2px 4px;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #3e362e;
+    border-radius: 100%;
+    font-weight: bold;
+}
+
+.menus .card3 h4{
+    margin-bottom: 0.5rem;
+    margin-top: -50px;
+    margin-left: 3rem;
+    text-decoration: underline #3e362e;
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.menus .card3 p{
+    color: #3e362e;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #93785B;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+
+.menus .card3 p:hover{
+    opacity: 1;
+}
+
+.menus .card3 a{
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    transition: all 0.3 ease;
+    font-weight: bold;
+}
+
+.menus .card3 a:hover{
+    color: #865D36;
+}
+
+.menus .card4 span{
+    display: inline-block;
+    background-color: #93785B;
+    padding: 2px 4px;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #3e362e;
+    border-radius: 100%;
+    font-weight: bold;
+}
+
+.menus .card4 h4{
+    margin-bottom: 0.5rem;
+    margin-top: -50px;
+    margin-left: 3rem;
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.menus .card4 p{
+    color: #3e362e;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #93785B;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+
+.menus .card4 p:hover{
+    opacity: 1;
+}
+
+.menus .card4 a{
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    transition: all 0.3 ease;
+    font-weight: bold;
+}
+
+.menus .card4 a:hover{
+    color: #865D36;
+}
+
+.menus .card5 span{
+    display: inline-block;
+    background-color: #93785B;
+    padding: 2px 4px;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #3e362e;
+    border-radius: 100%;
+    font-weight: bold;
+}
+
+.menus .card5 h4{
+    margin-bottom: 0.5rem;
+    margin-top: -50px;
+    margin-left: 3rem;
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.menus .card5 p{
+    color: #3e362e;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #93785B;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+
+.menus .card5 p:hover{
+    opacity: 1;
+}
+
+.menus .card5 a{
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    transition: all 0.3 ease;
+    font-weight: bold;
+}
+
+.menus .card5 a:hover{
+    color: #865D36;
+}
+
+.menus .card6 span{
+    display: inline-block;
+    background-color: #93785B;
+    padding: 2px 4px;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #3e362e;
+    border-radius: 100%;
+    font-weight: bold;
+}
+
+.menus .card6 h4{
+    margin-bottom: 0.5rem;
+    margin-top: -50px;
+    margin-left: 3rem;
+    color: #93785B;
+    -webkit-text-stroke: 1px #3e362e;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.menus .card6 p{
+    color: #3e362e;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #93785B;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+
+.menus .card6 p:hover{
+    opacity: 1;
+}
+
+.menus .card6 a{
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    transition: all 0.3 ease;
+    font-weight: bold;
+}
+
+.menus .card6 a:hover{
+    color: #865D36;
+}
+
+.menus .card7 span{
+    display: inline-block;
+    background-color: #93785B;
+    padding: 2px 4px;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #3e362e;
+    border-radius: 100%;
+    font-weight: bold;
+}
+
+.menus .card7 h4{
+    margin-bottom: 0.5rem;
+    margin-top: -50px;
+    margin-left: 3rem;
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.menus .card7 p{
+    color: #3e362e;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #93785B;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 35px;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+
+.menus .card7 p:hover{
+    opacity: 1;
+}
+
+.menus .card7 a{
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    transition: all 0.3 ease;
+    font-weight: bold;
+}
+
+.menus .card7 a:hover{
+    color: #865D36;
+}
+
+.menus .card8 span{
+    display: inline-block;
+    background-color: #93785B;
+    padding: 2px 4px;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #3e362e;
+    border-radius: 100%;
+    font-weight: bold;
+}
+
+.menus .card8 h4{
+    margin-bottom: 0.5rem;
+    margin-top: -50px;
+    margin-left: 3rem;
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.menus .card8 p{
+    color: #3e362e;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #93785B;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+
+.menus .card8 p:hover{
+    opacity: 1;
+}
+
+.menus .card8 a{
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    transition: all 0.3 ease;
+    font-weight: bold;
+}
+
+.menus .card8 a:hover{
+    color: #865D36;
+}
+
+.menus .card9 span{
+    display: inline-block;
+    background-color: #93785B;
+    padding: 2px 4px;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #3e362e;
+    border-radius: 100%;
+    font-weight: bold;
+}
+
+.menus .card9 h4{
+    margin-bottom: 0.5rem;
+    margin-top: -50px;
+    margin-left: 3rem;
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.menus .card9 p{
+    color: #3e362e;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #93785B;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 35px;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+
+.menus .card9 p:hover{
+    opacity: 1;
+}
+
+.menus .card9 a{
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    transition: all 0.3 ease;
+    font-weight: bold;
+}
+
+.menus .card9 a:hover{
+    color: #865D36;
+}
+
+
+.menus .cardZ span{
+    display: inline-block;
+    background-color: #93785B;
+    padding: 2px 4px;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #3e362e;
+    border-radius: 100%;
+    font-weight: bold;
+}
+
+.menus .cardZ h4{
+    margin-bottom: 0.5rem;
+    margin-top: -50px;
+    margin-left: 3rem;
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.menus .cardZ p{
+    color: #3e362e;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #93785B;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+
+.menus .cardZ p:hover{
+    opacity: 1;
+}
+
+.menus .cardZ a{
+    color: #3e362e;
+    -webkit-text-stroke: 1px #93785B;
+    transition: all 0.3 ease;
+    font-weight: bold;
+}
+
+.menus .cardZ a:hover{
+    color: #865D36;
+}
+
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+}
+
+footer .column .logo{
+    max-width: 300px;
+    margin-bottom: 2rem;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+footer .column .logo:hover{
+    transform: scale(1.1);
+}
+
+footer .column p{
+    color: #3e362e;
+    margin-bottom: 2rem;
+}
+
+footer .column .socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .column .socials a{
+    color: #A69080;
+    border: 1px solid #A69080;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover{
+    color: #3e362e;
+    background-color: #865D36;
+    border-color: #865D36;
+    transform: scale(1.3);
+}
+
+footer .column > a{
+    display: #3e362e;
+    color: #A69080;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+footer .column > a:hover{
+    color: #865D36;
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #3e362e;
+    font-size: 0.8rem;
+    text-align: center;
+}
